@@ -41,19 +41,19 @@ function Producto() {
     product.data[0].attributes;
   const desc = descripcion[0].children[0].text;
   return (
-    <div className="flex p-10 w-full justify-around">
-      <div className="w-5/12 flex justify-center align-middle">
+    <div className="md:flex p-10 w-full justify-around">
+      <div className="md:w-5/12 flex justify-center align-middle">
         <img
           src={imagen.data[0].attributes.url}
           alt={`Imagen guitarra ${nombre}`}
-          className="max-h-[600px] object-cover rounded-2xl shadow-lg"
+          className="max-h-[700px] object-cover rounded-2xl shadow-lg"
         />
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <p className="pt-4 text-grey text-lg">{marca}</p>
         <h1 className="font-title text-5xl font-bold my-6">{nombre}</h1>
         <h2 className="text-4xl  ">{moneyFormat(precio)}</h2>
-        <p className="my-6 w-2/3">{desc}</p>
+        <p className="my-6 md:w-2/3">{desc}</p>
       </div>
     </div>
   );

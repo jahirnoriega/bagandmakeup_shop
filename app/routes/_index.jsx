@@ -5,30 +5,26 @@ import { Link } from "@remix-run/react";
 
 function Index() {
   return (
-    <header>
-      <div className="flex w-full">
-        <div className="w-2/3 flex items-center max-h-svh ">
-          <img
-            src={container_img}
-            alt="bg img"
-            className="h-full w-full object- cover"
-          />
-        </div>
-        <div className="w-1/3 bg-primary text-white flex items-center justify-center">
-          <div className="px-5 mx-auto">
-            <h1 className="text-8xl font-extrabold font-title py-8">
-              BAG & MAKEUP SHOP By Janeth
-            </h1>
-            <Link to="/productos">
-              <button className="bg-white text-black rounded-xl py-2 px-6 text-lg w-3/5">
-                Ver Catalogo
-              </button>
-            </Link>
-          </div>
+    <div>
+      <div className="lg:flex ">
+        <img
+          src={container_img}
+          alt="bg img"
+          className="lg:h-[550px] object-cover rounded-2xl lg:w-2/3 w-full"
+        />
+        <div className="lg:w-1/3 lg:px-9 px-6  text-black items-center justify-center">
+          <h1 className="lg:text-7xl text-5xl font-extrabold font-title py-10">
+            Bag & Makeup Shop By Janeth
+          </h1>
+          <Link to="/productos">
+            <button className="bg-primary text-white rounded-xl p-2 text-lg w-1/2 lg:w-3/5">
+              Ver Catalogo
+            </button>
+          </Link>
         </div>
       </div>
-      <div className="flex w-full my-10 px-8">
-        <div className="w-1/2">
+      <div className="lg:flex w-full my-10 lg:px-9 px-6 ">
+        <div className="lg:w-1/2">
           <h1 className="text-6xl font-title font-bold p-4">Lo Popular!</h1>
           <p className="text-xl p-4">
             Vendemos bolsas y maquillaje de la mejor calidad!
@@ -39,7 +35,7 @@ function Index() {
             </button>
           </Link>
         </div>
-        <div className="w-1/2 flex justify-around">
+        <div className="lg:w-1/2 flex justify-around">
           <img
             src={example_makeup}
             alt="makeup"
@@ -52,7 +48,7 @@ function Index() {
           />
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 

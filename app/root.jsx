@@ -17,7 +17,7 @@ export function meta() {
     {
       charset: "utf-8",
       title: "Bag & MakeUp Shop",
-      viewport: "width=device-width,initial-scale=1",
+      viewport: "width=device-width, initial-scale=1.0",
     },
   ];
 }
@@ -66,6 +66,8 @@ function Document({ children }) {
   return (
     <html lang="es">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
